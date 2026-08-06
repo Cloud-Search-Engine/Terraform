@@ -1,0 +1,13 @@
+# Copy to terraform.tfvars and fill in values.
+#   cp terraform.tfvars.example terraform.tfvars
+
+aws_region   = "us-east-1"
+name_prefix  = "cloudsearch-dev"
+
+# Must be globally unique
+docs_bucket_name = "cloudsearch-docs-dev-CHANGE-ME"
+
+# Optional overrides (defaults are already small for local/dev AWS)
+# eks_node_instance_types = ["t3.medium"]
+# rds_instance_class      = "db.t4g.micro"
+# redis_node_type         = "cache.t4g.micro"

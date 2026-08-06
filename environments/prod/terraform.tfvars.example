@@ -1,0 +1,13 @@
+# Copy to terraform.tfvars and fill in values.
+#   cp terraform.tfvars.example terraform.tfvars
+
+aws_region  = "us-east-1"
+name_prefix = "cloudsearch-prod"
+
+# Must be globally unique
+docs_bucket_name = "cloudsearch-docs-prod-CHANGE-ME"
+
+# Optional production sizing overrides
+# eks_node_instance_types = ["m5.large", "m5.xlarge"]
+# rds_instance_class      = "db.r6g.large"
+# redis_node_type         = "cache.r6g.large"
